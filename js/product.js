@@ -26,7 +26,7 @@ function displayProduct(rucksack) {
   const productContainer = document.getElementById("product-container");
 
   const image = document.createElement("img");
-  image.src = `../images/${rucksack.image}`;
+  image.src = rucksack.image;
   image.alt = rucksack.name;
 
   const title = document.createElement("h2");
