@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const productId = urlParams.get("id");
 
   if (productId) {
-    fetch("data/rucksacks.json")
+    fetch("../data/rucksacks.json")
       .then((response) => response.json())
       .then((data) => {
         const product = data.find((rucksack) => rucksack.id === productId);
